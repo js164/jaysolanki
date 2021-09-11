@@ -191,6 +191,7 @@ a{
 .home{
   /* height: clac(100vh-3rem); */
   height: 100vh;
+  width: 90vw;
   row-gap: 1rem;
 }
 .home__data{
@@ -207,7 +208,9 @@ a{
   position: absolute;
   right: -10%;
   bottom: 0;
-  width: 450px;
+  width: 300px;
+  margin-right: 20%;
+  margin-right: var(--mb-2);
 }
 .home__img img{
   max-width: 700px;
