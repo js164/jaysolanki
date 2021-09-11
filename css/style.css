@@ -79,7 +79,7 @@ img{
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
