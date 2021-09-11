@@ -117,7 +117,9 @@ img{
     .home_scroll{
       display: none;
     }
-    
+    .project__div img{
+      width: 100vw;
+    }
     /* .project__div{
       flex-wrap: wrap;
     } */
