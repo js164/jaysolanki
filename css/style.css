@@ -120,6 +120,9 @@ img{
     .project__div img{
       width: 100vw;
     }
+    .home__img{
+      margin-right: 10%;
+    }
     
     /* .project__div{
       flex-wrap: wrap;
@@ -209,8 +212,8 @@ a{
   right: -10%;
   bottom: 0;
   width: 300px;
-  margin-right: 20%;
-  margin-right: var(--mb-2);
+  /* margin-right: 20%; */
+  /* margin-right: var(--mb-2); */
 }
 .home__img img{
   max-width: 700px;
