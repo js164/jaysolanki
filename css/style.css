@@ -6,7 +6,7 @@
     --font-semi: 600;
 }
   
-.light-theme{
+.dark-theme{
     --first-color: #4070F4;
     --second-color: #0E2431;
     --bg-color:white;
@@ -14,7 +14,7 @@
     --box-shadow:rgba(14,36,49,.15)
 }
 
-.dark-theme{
+.light-theme{
   --first-color: #4070F4;
   --second-color: #fff;
   --bg-color:black;
