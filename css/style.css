@@ -146,8 +146,8 @@ h1,h2,p{
       display: none;
     }
     .project__div img{
-      /* width: 100vw; */
-      height: 70vh;
+      width: 100vw;
+      /* height: 70vh; */
     }
     /* .home__img{
       margin-right: 10%;
