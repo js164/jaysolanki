@@ -222,7 +222,7 @@ a{
 .home{
   /* height: clac(100vh-3rem); */
   height: 100vh;
-  width: clac(100vw-3rem);
+  width: calc(100vw-3rem);
   row-gap: 1rem;
 }
 .home__data{
