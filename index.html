@@ -65,16 +65,27 @@
             <div class="about__container bd-grid">
                 <div class="about__img">
                     <!-- <img src="Jay Profile.jpg" alt=""> -->
+                    <div class="about__icons">
+                        <a href="mailto:jaysolanki164@gmail.com"><i class="uil uil-fast-mail"></i></a>
+                        <a href="https://github.com/js164/"><i class="uil uil-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jay-solanki-bbb3771a1/"><i class="devicon-linkedin-plain colored"></i></a>
+                        <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a>
+                    </div>
                 </div>
                 <div>
-                    <h2 class="about__subtitle">I'm Jay</h2>
-                    <p class="about__text">Hello I am Jay From Surat</p>
+                    <h2 class="about__subtitle">Jay Solanki</h2>
+                    <p class="about__text">Aspire To Utilize My Skills That Can Contribute The Best For The Growth Of
+                        Organization While Ensuring Growth In Personal Career</p>
+                    <button class="about__button"><a href="Jay Resume.pdf" download="resume">Resume <i class="uil uil-cloud-download"></i></a></button>
                 </div>
             </div>
         </section>
 
         <section class="qulification bd-grid">
-            <h2 class="section-title">Qualification</h2>
+            <div class="bars">
+                <button class="bar-title bar-title-active" id="title1" onclick="eduVisible()"><i class="uil uil-graduation-cap"></i>Qualification</button>
+                <button class="bar-title" id="title2" onclick="hobbieVisible()"><i class="uil uil-icons"></i>Hobbies</button>
+            </div>
             <div class="qualification__container">
                 <div class="qualification__list">
                     <div class="q_data">
@@ -99,6 +110,29 @@
                         <p class="q_info">L. D. College of Engineering</p>
                     </div>
                     <div class="q_track"><div class="q_line"></div><div class="q_vline"></div></div><div class="q_extra"></div>
+                </div>
+            </div>
+            <div class="hobbie__container">
+                <div class="h__list">
+                    <img class="h__img" src="world.png" alt="">
+                    <div class="h-title">Travelling</div>
+                </div>
+                <div class="h__list">
+                    <img class="h__img" src="guitar.png" alt="">
+                    <div class="h-title">Plying Musical Instruments</div>
+                </div>
+                <div class="h__list">
+                    <img class="h__img" src="airplane.png" alt="">
+                    <div class="h-title">Exploring Airplanes</div>
+                </div><div class="h__list">
+                    <img class="h__img" src="learning.png" alt="">
+                    <div class="h-title">Machine Learning</div>
+                </div><div class="h__list">
+                    <img class="h__img" src="hacking.png" alt="">
+                    <div class="h-title">Ethical Hacking</div>
+                </div><div class="h__list">
+                    <img class="h__img" src="website.png" alt="">
+                    <div class="h-title">Web Development</div>
                 </div>
             </div>
         </section>
@@ -239,12 +273,12 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
-                <form method="post" class="contact__form">
+                <div class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input" required>
                     <input type="mail" placeholder="Email" class="contact__input" required>
                     <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
                     <input type="submit" class="contact__button button" value="Send" onclick="sendEmail()">
-                </form>
+                </div>
             </div>
         </section>
 
@@ -257,6 +291,8 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

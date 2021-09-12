@@ -35,16 +35,62 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-function sendEmail(){
-  // Email.send({
-  //   Host : "smtp.yourisp.com",
-  //   Username : "username",
-  //   Password : "password",
-  //   To : 'them@website.com',
-  //   From : "you@isp.com",
-  //   Subject : "This is the subject",
-  //   Body : "And this is the body"
-  // }).then(
-  // message => alert(message)
-  // );
+
+function eduVisible() {
+    document.getElementById('title1').className ='bar-title bar-title-active'
+    document.getElementById('title2').className ='bar-title'
+    document.querySelector('.qualification__container') .style.display='block';
+    document.querySelector('.hobbie__container').style.display = 'none';
 }
+
+function hobbieVisible() {
+  document.getElementById('title2').className ='bar-title bar-title-active'
+  document.getElementById('title1').className ='bar-title'
+  document.querySelector('.qualification__container') .style.display='none';
+  document.querySelector('.hobbie__container').style.display='grid';
+}
+
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "j194solanki@gmail.com",
+    Password : "hrcyliepbzhlybdg",
+    To : 'j194solanki@gmail.com',
+    From : "j194solanki@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message)
+  );
+  
+  console.log("Hello")
+}
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+});
+
+sr.reveal('.home__title',{}); 
+sr.reveal('.button',{delay: 200}); 
+sr.reveal('.home__img',{delay: 400});  
+
+sr.reveal('.about__subtitle',{delay: 400}); 
+sr.reveal('.about__text',{delay: 400}); 
+sr.reveal('.about__icons a',{ interval: 200});
+sr.reveal('.about__button',{delay:500});
+
+sr.reveal('.bars',{delay:200})
+sr.reveal('.qualification__list',{interval:100})
+
+sr.reveal('.skills__subtitle',{}); 
+sr.reveal('.skills__text',{}); 
+sr.reveal('.skills__data',{interval: 200}); 
+sr.reveal('.skills__img',{delay: 600});
+
+sr.reveal('.project__div',{delay:100})
+
+sr.reveal('.contact__input',{interval: 200}); 
