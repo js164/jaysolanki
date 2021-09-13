@@ -51,22 +51,6 @@ function hobbieVisible() {
 }
 
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "j194solanki@gmail.com",
-    Password : "hrcyliepbzhlybdg",
-    To : 'j194solanki@gmail.com',
-    From : "j194solanki@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-  message => alert(message)
-  );
-  
-  console.log("Hello")
-}
-
 const sr = ScrollReveal({
   origin: 'top',
   distance: '80px',

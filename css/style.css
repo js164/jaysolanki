@@ -554,6 +554,12 @@ a{
   min-width: 40%;
 }
 
+.contact__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap-reverse;
+  /* align-items: center; */
+}
 .contact__input{
   width: 100%;
   font-size: var(--normal-font-size);
@@ -571,6 +577,21 @@ a{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+.contact__details{
+  display: flex;
+  margin: var(--mb-2);
+}
+.contact__icons i{
+  font-size: 2.5rem;
+}
+.contact__title{
+  font-size: var(--mb-4);
+  font-weight: bold;
+}
+.contact__list{
+  display: flex;
+  flex-direction: column;
 }
 
 

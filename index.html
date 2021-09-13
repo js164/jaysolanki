@@ -72,7 +72,7 @@
                         <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a>
                     </div>
                 </div>
-                <div>
+                <div class="about__data">
                     <h2 class="about__subtitle">Jay Solanki</h2>
                     <p class="about__text">Aspire To Utilize My Skills That Can Contribute The Best For The Growth Of
                         Organization While Ensuring Growth In Personal Career</p>
@@ -273,12 +273,47 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
-                <div class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input" required>
-                    <input type="mail" placeholder="Email" class="contact__input" required>
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
-                    <input type="submit" class="contact__button button" value="Send" onclick="sendEmail()">
+                <div class="contact__list">
+                    <div class="contact__details">
+                        <div class="contact__icons">
+                            <i class="uil uil-envelope-alt"></i>
+                        </div>
+                        <div>
+                            <div class="contact__title">
+                                Email
+                            </div>
+                                jaysolanki164@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact__details">
+                        <div class="contact__icons">
+                            <i class="uil uil-phone"></i>
+                        </div>
+                        <div>
+                            <div class="contact__title">
+                                Phone
+                            </div>
+                                +919099243317
+                        </div>
+                    </div>
+                    <div class="contact__details">
+                        <div class="contact__icons">
+                            <i class="uil uil-map-marker"></i>
+                        </div>
+                        <div>
+                            <div class="contact__title">
+                                Address
+                            </div>
+                                Surat, Gujarat, India
+                        </div>
+                    </div>
                 </div>
+                <form action="https://formspree.io/f/mwkaykpp" method="POST" class="contact__form">
+                    <input name="name" type="text" placeholder="Name" class="contact__input" required>
+                    <input type="mail" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                    <input type="submit" class="contact__button button" value="Send">
+                </form>
             </div>
         </section>
 
