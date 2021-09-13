@@ -78,3 +78,4 @@ sr.reveal('.skills__img',{delay: 600});
 sr.reveal('.project__div',{delay:100})
 
 sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact__details',{interval:200});
