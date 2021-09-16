@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jay-icon.png">
     <title>Jay Solanki</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="light-theme">
 
@@ -47,7 +55,7 @@
             <div class="home__data">
                 <h1 class="home__title">
                     Hi,<br>
-                    I'am <span class="home__title-color">Jay Solanki &nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                    I'm <span class="home__title-color">Jay Solanki &nbsp;&nbsp;&nbsp;&nbsp;</span><br>
                     <span class="typing"></span>
                 </h1>
                 <a href="#contact" class="button">Contact</a>
@@ -56,7 +64,7 @@
                 <img src="jay.png" alt="Not Found">
             </div>
             <div class="home_scroll">
-               <p> <i class="uil uil-mouse-alt"></i>Scroll Down</p>
+               <p><a href="#about"><i class="uil uil-mouse-alt"></i>Scroll Down</a></p>
             </div>
         </section>
 
@@ -156,7 +164,7 @@
                         <span class="skills__name">JAVASCRIPT</span>
                     </div>
                     <div class="skills__bar skills__js"></div>
-                    <div><span class="skills__percentage">75%</span></div>
+                    <div><span class="skills__percentage">70%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -164,7 +172,7 @@
                         <span class="skills__name">Python</span>
                     </div>
                     <div class="skills__bar skills__py"></div>
-                    <div><span class="skills__percentage">75%</span></div>
+                    <div><span class="skills__percentage">70%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -172,7 +180,7 @@
                         <span class="skills__name">Django</span>
                     </div>
                     <div class="skills__bar skills__django"></div>
-                    <div><span class="skills__percentage">80%</span></div>
+                    <div><span class="skills__percentage">75%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -180,7 +188,7 @@
                         <span class="skills__name">C</span>
                     </div>
                     <div class="skills__bar skills__c"></div>
-                    <div><span class="skills__percentage">80%</span></div>
+                    <div><span class="skills__percentage">70%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -204,7 +212,7 @@
                         <span class="skills__name">Java</span>
                     </div>
                     <div class="skills__bar skills__java"></div>
-                    <div><span class="skills__percentage">65%</span></div>
+                    <div><span class="skills__percentage">60%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -212,7 +220,7 @@
                         <span class="skills__name">MySQL</span>
                     </div>
                     <div class="skills__bar skills__mysql"></div>
-                    <div><span class="skills__percentage">70%</span></div>
+                    <div><span class="skills__percentage">65%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -220,54 +228,63 @@
                         <span class="skills__name">BootStrap</span>
                     </div>
                     <div class="skills__bar skills__bootstrap"></div>
-                    <div><span class="skills__percentage">70%</span></div>
+                    <div><span class="skills__percentage">65%</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="projects section" id="projects">
+        <section class="project-slider">
             <h2 class="section-title">Projects</h2>
-                <div class="projects__container bd-grid">
-                    <div class="project__div">
-                        <img src="cars.jpg" alt="">
-                        <div class="project__data">
-                            <h2 class="project__title">Cars
-                            <a href="https://book-car-appointment.herokuapp.com/"><i class="uil uil-link"></i></a></h2>
-                            <h3>Technology: Django</h3>
+            <div id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <label for="s1" id="slide1">
+                    <img class="slide__img" src="cars.jpg" height="100%" width="100%">
+                    <div class="slide__data">
+                        <h2 class="slide__title">Cars</h2>
+                        <div><a class="slide__link" href="https://book-car-appointment.herokuapp.com/"><i class="uil uil-window"></i></a>
+                            <a class="slide__link" href="https://github.com/js164/book-car-appointment"><i class="uil uil-github"></i></a>
+                        </div>
+                        <h3>Technology: Django</h3>
+                        <p>Multiple users can join the chat.</p>
+                    </div>
+                </label>
+                <label for="s2" id="slide2">
+                        <img class="slide__img" src="chat.jpg" height="100%" width="100%">
+                        <div class="slide__data">
+                            <h2 class="slide__title">Chatting Web</h2>
+                            <div><a class="slide__link" href="https://live-chat-web.herokuapp.com/"><i class="uil uil-window"></i></a>
+                                <a class="slide__link" href="https://github.com/js164/live-chat-web"><i class="uil uil-github"></i></a>
+                            </div>
+                            <h3>Technology: Node.js</h3>
                             <p>Companies can add and maintain their cars and Customers can view, compare and book a test drive.</p>
                         </div>
-                    </div>
-
-                    <div class="project__div">
-                        <img src="chat.jpg" alt="">
-                        <div class="project__data">
-                            <h2 class="project__title">Chatting Web
-                            <a href="https://live-chat-web.herokuapp.com/"><i class="uil uil-link"></i></a></h2>
-                            <h3>Technology: Node.js</h3>
-                            <p>Multiple users can join the chat.</p>
-                        </div>
-                    </div>
-
-                    <div class="project__div">
-                        <img src="blog.jpg" alt="">
-                        <div class="project__data">
-                            <h2 class="project__title">Blog App
-                            <a href="https://blog-connect.herokuapp.com/"><i class="uil uil-link"></i></a></h2>
-                            <h3>Technology: Django</h3>
-                            <p>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs, and also comments on blogs</p>
-                        </div>
-                    </div>
-
-                    <div class="project__div">
-                        <img src="farm.jpg" alt="">
-                        <div class="project__data">
-                            <h2 class="project__title">Farm House
-                            <a href="https://farm-house.herokuapp.com/"><i class="uil uil-link"></i></a></h2>
+                </label>
+                <label for="s3" id="slide3">
+                        <img class="slide__img" src="farm.jpg" height="100%" width="100%">
+                        <div class="slide__data">
+                            <h2 class="slide__title">Farm House</h2>
+                            <div><a class="slide__link" href="https://farm-house.herokuapp.com/"><i class="uil uil-window"></i></a>
+                                <a class="slide__link" href="https://github.com/js164/farm-house-on-rent"><i class="uil uil-github"></i></a>
+                            </div>
                             <h3>Technology: Django</h3>
                             <p>An Email verification link and mobile OTP to activate User, Paytm payment gateway.</p>
                         </div>
-                    </div>
-                </div>
+                </label>
+                <label for="s4" id="slide4">
+                        <img class="slide__img" src="blog.jpg" height="100%" width="100%">
+                        <div class="slide__data">
+                            <h2 class="slide__title">Blog App</h2>
+                            <div><a class="slide__link" href="https://blog-connect.herokuapp.com/"><i class="uil uil-window"></i></a>
+                                <a class="slide__link" href="https://github.com/js164/blog-connect"><i class="uil uil-github"></i></a>
+                            </div>
+                            <h3>Technology: Django</h3>
+                            <p>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs, and also comments on blogs</p>
+                        </div>
+                </label>
+            </div>
         </section>
 
         <section class="contact section" id="contact">
@@ -328,6 +345,10 @@
     </main>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
 </body>
 </html>
