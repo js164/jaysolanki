@@ -284,6 +284,8 @@
                             <p>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs, and also comments on blogs</p>
                         </div>
                 </label>
+                <div class="button-next"><i class="uil uil-step-forward"></i></div>
+                <div class="button-prev"><i class="uil uil-previous"></i></div>
             </div>
         </section>
 
@@ -349,6 +351,15 @@
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            $('.button-next').click(function() {
+              $("input[name=slider]:checked").next().click()
+            });
+            $('.button-prev').click(function() {
+                $("input[name=slider]:checked").prev.click()
+              });
+          });
+    </script>
 </body>
 </html>
