@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="light-theme">
 
     <header class="l-header">
@@ -27,11 +29,12 @@
                 <a href="#" class="nav__logo">Jay Solanki</a>
             </div>
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
+                <ul class="nav__list nav_ul">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     <li class="nav__item">
                         <div class="nav__btns">
@@ -48,7 +51,7 @@
             </div>
         </nav>
     </header>
-    
+
 
     <main class="l-main">
         <section class="home bd-grid" id="home">
@@ -60,11 +63,11 @@
                 </h1>
                 <a href="#contact" class="button">Contact</a>
             </div>
-            <div class="home__img">    
+            <div class="home__img">
                 <img src="jay.png" alt="Not Found">
             </div>
             <div class="home_scroll">
-               <p><a href="#about"><i class="uil uil-mouse-alt"></i>Scroll Down</a></p>
+                <p><a href="#about"><i class="uil uil-mouse-alt"></i>Scroll Down</a></p>
             </div>
         </section>
 
@@ -76,23 +79,29 @@
                     <div class="about__icons">
                         <a href="mailto:jaysolanki164@gmail.com"><i class="uil uil-fast-mail"></i></a>
                         <a href="https://github.com/js164/"><i class="uil uil-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jay-solanki-bbb3771a1/"><i class="devicon-linkedin-plain colored"></i></a>
-                        <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/jay-solanki-bbb3771a1/"><i
+                                class="devicon-linkedin-plain colored"></i></a>
+                        <!-- <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a> -->
                     </div>
                 </div>
                 <div class="about__data">
                     <h2 class="about__subtitle">Jay Solanki</h2>
                     <p class="about__text">Aspire To Utilize My Skills That Can Contribute The Best For The Growth Of
                         Organization While Ensuring Growth In Personal Career</p>
-                    <button class="about__button"><a href="Jay Resume.pdf" download="resume">Resume <i class="uil uil-cloud-download"></i></a></button>
+                    <button class="about__button"><a href="Jay Resume.pdf" download="resume">Resume <i
+                                class="uil uil-cloud-download"></i></a></button>
                 </div>
             </div>
         </section>
 
         <section class="qulification bd-grid">
             <div class="bars">
-                <button class="bar-title bar-title-active" id="title1" onclick="eduVisible()"><i class="uil uil-graduation-cap"></i>Qualification</button>
-                <button class="bar-title" id="title2" onclick="hobbieVisible()"><i class="uil uil-icons"></i>Hobbies</button>
+                <button class="bar-title bar-title-active" id="title1" onclick="eduVisible()"><i
+                        class="uil uil-graduation-cap"></i>Qualification</button>
+                <button class="bar-title" id="title15" onclick="workVisible()"><i
+                        class="uil uil-graduation-cap"></i>Internships & Work</button>
+                <button class="bar-title" id="title2" onclick="hobbieVisible()"><i
+                        class="uil uil-icons"></i>Hobbies</button>
             </div>
             <div class="qualification__container">
                 <div class="qualification__list">
@@ -100,24 +109,78 @@
                         <h4 class="course-title">SSC</h4>
                         <div class="duration"><i class="uil uil-calendar-alt"></i> 2015 - 2016</div>
                         <p class="q_info">Board: GSEB</p>
+                        <p class="q_info">Grade: 83.17%</p>
                     </div>
-                    <div class="q_track"><div class="q_line"></div><div class="q_vline"></div></div><div class="q_extra"></div>
+                    <div class="q_track">
+                        <div class="q_line"></div>
+                        <div class="q_vline"></div>
+                    </div>
+                    <div class="q_extra"></div>
                 </div>
                 <div class="qualification__list">
                     <div class="q_data q_right_data">
                         <h4 class="course-title">HSC</h4>
                         <div class="duration"><i class="uil uil-calendar-alt"></i> 2017 - 2018</div>
                         <p class="q_info">Board: GSEB</p>
+                        <p class="q_info">Grade: 78.62%</p>
                     </div>
-                    <div class="q_track"><div class="q_right"></div><div class="q_vline"></div></div><div class="q_extra"></div>
+                    <div class="q_track">
+                        <div class="q_right"></div>
+                        <div class="q_vline"></div>
+                    </div>
+                    <div class="q_extra"></div>
                 </div>
                 <div class="qualification__list">
                     <div class="q_data">
                         <h4 class="course-title">Computer Engineering</h4>
                         <div class="duration"><i class="uil uil-calendar-alt"></i> 2018 - 2022</div>
                         <p class="q_info">L. D. College of Engineering</p>
+                        <p class="q_info">University: GTU</p>
+                        <p class="q_info">Grade: 9.24</p>
                     </div>
-                    <div class="q_track"><div class="q_line"></div><div class="q_vline"></div></div><div class="q_extra"></div>
+                    <div class="q_track">
+                        <div class="q_line"></div>
+                        <div class="q_vline"></div>
+                    </div>
+                    <div class="q_extra"></div>
+                </div>
+            </div>
+            <div class="work__container">
+                <div class="work__list">
+                    <div class="w_extra"></div>
+                    <div class="w_track">
+                        <div class="w_line"></div>
+                        <div class="w_vline"></div>
+                    </div>
+                    <div class="w_data ">
+                        <h4 class="course-title">Full Stack Internship</h4>
+                        <div class="duration"><i class="uil uil-calendar-alt"></i>Jan 2022-Mar 2022</div>
+                        <p class="w_info">Organization: ByajBook</p>
+                    </div>
+                </div>
+                <div class="work__list">
+                    <div class="w_extra"></div>
+                    <div class="w_track">
+                        <div class="w_right"></div>
+                        <div class="w_vline"></div>
+                    </div>
+                    <div class="w_data">
+                        <h4 class="course-title">DevOps Internship</h4>
+                        <div class="duration"><i class="uil uil-calendar-alt"></i> Mar 2022-May 2022</div>
+                        <p class="w_info">Organization: Tata Consultancy Services</p>
+                    </div>
+                </div>
+                <div class="work__list">
+                    <div class="w_extra"></div>
+                    <div class="w_track">
+                        <div class="w_line"></div>
+                        <div class="w_vline"></div>
+                    </div>
+                    <div class="w_data">
+                        <h4 class="course-title">System Engineer</h4>
+                        <div class="duration"><i class="uil uil-calendar-alt"></i> Jun 2022- Present</div>
+                        <p class="w_info">Organization: Tata Consultancy Services</p>
+                    </div>
                 </div>
             </div>
             <div class="hobbie__container">
@@ -132,13 +195,15 @@
                 <div class="h__list">
                     <img class="h__img" src="airplane.png" alt="">
                     <div class="h-title">Exploring Airplanes</div>
-                </div><div class="h__list">
+                    <!-- </div><div class="h__list">
                     <img class="h__img" src="learning.png" alt="">
-                    <div class="h-title">Machine Learning</div>
-                </div><div class="h__list">
+                    <div class="h-title">Machine earning</div> -->
+                </div>
+                <div class="h__list">
                     <img class="h__img" src="hacking.png" alt="">
                     <div class="h-title">Ethical Hacking</div>
-                </div><div class="h__list">
+                </div>
+                <div class="h__list">
                     <img class="h__img" src="website.png" alt="">
                     <div class="h-title">Web Development</div>
                 </div>
@@ -149,7 +214,7 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills__container bd-grid">
                 <h2 class="skills__subtitle">Profesional Skills</h2>
-                
+
                 <div class="skills__data">
                     <div class="skills__names">
                         <i class='bx bxl-html5 skills__icon'></i>
@@ -164,6 +229,38 @@
                         <span class="skills__name">JAVASCRIPT</span>
                     </div>
                     <div class="skills__bar skills__js"></div>
+                    <div><span class="skills__percentage">70%</span></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-amazonwebservices-plain-wordmark colored skills__icon'></i>
+                        <span class="skills__name">AWS Solution Architect</span>
+                    </div>
+                    <div class="skills__bar skills__aws"></div>
+                    <div><span class="skills__percentage">75%</span></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-nodejs-plain colored skills__icon'></i>
+                        <span class="skills__name">MERN (MongoDB, Express, React, Node.js)</span>
+                    </div>
+                    <div class="skills__bar skills__mern"></div>
+                    <div><span class="skills__percentage">70%</span></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-c-plain colored skills__icon'></i>
+                        <span class="skills__name">C</span>
+                    </div>
+                    <div class="skills__bar skills__c"></div>
+                    <div><span class="skills__percentage">75%</span></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-angularjs-plain colored skills__icon'></i>
+                        <span class="skills__name">Angular</span>
+                    </div>
+                    <div class="skills__bar skills__angular"></div>
                     <div><span class="skills__percentage">65%</span></div>
                 </div>
                 <div class="skills__data">
@@ -180,39 +277,7 @@
                         <span class="skills__name">Django</span>
                     </div>
                     <div class="skills__bar skills__django"></div>
-                    <div><span class="skills__percentage">65%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='devicon-c-plain colored skills__icon'></i>
-                        <span class="skills__name">C</span>
-                    </div>
-                    <div class="skills__bar skills__c"></div>
-                    <div><span class="skills__percentage">70%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='devicon-nodejs-plain colored skills__icon'></i>
-                        <span class="skills__name">Node.js</span>
-                    </div>
-                    <div class="skills__bar skills__node"></div>
                     <div><span class="skills__percentage">55%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='devicon-express-original colored skills__icon'></i>
-                        <span class="skills__name">Express.js</span>
-                    </div>
-                    <div class="skills__bar skills__express"></div>
-                    <div><span class="skills__percentage">50%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='devicon-java-plain colored skills__icon'></i>
-                        <span class="skills__name">Java</span>
-                    </div>
-                    <div class="skills__bar skills__java"></div>
-                    <div><span class="skills__percentage">60%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
@@ -220,73 +285,114 @@
                         <span class="skills__name">MySQL</span>
                     </div>
                     <div class="skills__bar skills__mysql"></div>
-                    <div><span class="skills__percentage">65%</span></div>
+                    <div><span class="skills__percentage">60%</span></div>
                 </div>
                 <div class="skills__data">
                     <div class="skills__names">
-                        <i class='devicon-bootstrap-plain colored skills__icon'></i>
-                        <span class="skills__name">BootStrap</span>
+                        <i class='devicon-java-plain colored skills__icon'></i>
+                        <span class="skills__name">Java</span>
                     </div>
-                    <div class="skills__bar skills__bootstrap"></div>
-                    <div><span class="skills__percentage">65%</span></div>
+                    <div class="skills__bar skills__java"></div>
+                    <div><span class="skills__percentage">40%</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="project-slider">
+        <section class="project-slider" id="projects">
             <h2 class="section-title">Projects</h2>
-            <div id="slider">
-                <input type="radio" name="slider" id="s1" checked>
-                <input type="radio" name="slider" id="s2">
-                <input type="radio" name="slider" id="s3">
-                <input type="radio" name="slider" id="s4">
-                <label for="s1" id="slide1">
-                    <img class="slide__img" src="cars.jpg" height="100%" width="100%">
-                    <div class="slide__data">
-                        <h2 class="slide__title">Cars</h2>
-                        <div><a class="slide__link" href="https://book-car-appointment.herokuapp.com/"><i class="uil uil-window"></i></a>
-                            <a class="slide__link" href="https://github.com/js164/book-car-appointment"><i class="uil uil-github"></i></a>
+            <div class="project-grid-column">
+                <div class="project-grid-div">
+                    <h2 class="project-title">MERN Stack</h2>
+                    <div class="project-grid">
+                        <div id="slide2" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Go Car</h2>
+                                <ul>
+                                    <li>Admin can add cars, category wise, rates according to category, verify user and KYC</li>
+                                    <li>User can estimate price for rental using estimated KM and time, reserve a car</li>
+                                    <li>Authentication using Passport.js , Username & password, Google Account</li>
+                                </ul>
+                                <div>
+                                    <a class="slide__link" href="https://github.com/js164/goCar"><i
+                                            class="uil uil-github"></i></a>
+                                    <a class="slide__link" href="https://github.com/js164/gocar-react"><i
+                                        class="uil uil-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Technology: Django</h3>
-                        <p>Multiple users can join the chat.</p>
                     </div>
-                </label>
-                <label for="s2" id="slide2">
-                        <img class="slide__img" src="chat.jpg" height="100%" width="100%">
-                        <div class="slide__data">
-                            <h2 class="slide__title">Chatting Web</h2>
-                            <div><a class="slide__link" href="https://live-chat-web.herokuapp.com/"><i class="uil uil-window"></i></a>
-                                <a class="slide__link" href="https://github.com/js164/live-chat-web"><i class="uil uil-github"></i></a>
+                </div>
+                <div class="project-grid-div">
+                    <h2 class="project-title">Node.js</h2>
+                    <div class="project-grid">
+                        <div id="slide2" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Chatting Web</h2>
+                                <ul><li>Multiple users can join the chat.</li></ul>
+                                <div>
+                                    <a class="slide__link" href="https://github.com/js164/live-chat-web"><i
+                                            class="uil uil-github"></i></a>
+                                </div>
                             </div>
-                            <h3>Technology: Node.js</h3>
-                            <p>Companies can add and maintain their cars and Customers can view, compare and book a test drive.</p>
                         </div>
-                </label>
-                <label for="s3" id="slide3">
-                        <img class="slide__img" src="farm.jpg" height="100%" width="100%">
-                        <div class="slide__data">
-                            <h2 class="slide__title">Farm House</h2>
-                            <div><a class="slide__link" href="https://farm-house.herokuapp.com/"><i class="uil uil-window"></i></a>
-                                <a class="slide__link" href="https://github.com/js164/farm-house-on-rent"><i class="uil uil-github"></i></a>
+                        <div id="slide4" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Let's Meet</h2>
+                                <ul><li>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs,
+                                    and
+                                    also comments on blogs</li></ul>
                             </div>
-                            <h3>Technology: Django</h3>
-                            <p>An Email verification link and mobile OTP to activate User, Paytm payment gateway.</p>
                         </div>
-                </label>
-                <label for="s4" id="slide4">
-                        <img class="slide__img" src="blog.jpg" height="100%" width="100%">
-                        <div class="slide__data">
-                            <h2 class="slide__title">Blog App</h2>
-                            <div><a class="slide__link" href="https://blog-connect.herokuapp.com/"><i class="uil uil-window"></i></a>
-                                <a class="slide__link" href="https://github.com/js164/blog-connect"><i class="uil uil-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-grid-div">
+                    <h2 class="project-title">Django</h2>
+                    <div class="project-grid">
+                        <div id="slide1" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Cars</h2>
+                                <ul><li>
+                                    Companies can add and maintain their cars and Customers can view, compare and book a
+                                    test
+                                    drive.
+                                </li></ul>
+                                <div>
+                                    <a class="slide__link" href="https://github.com/js164/book-car-appointment"><i
+                                            class="uil uil-github"></i></a>
+                                </div>
                             </div>
-                            <h3>Technology: Django</h3>
-                            <p>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs, and also comments on blogs</p>
                         </div>
-                </label>
-                <div class="button-next"><i class="uil uil-step-forward"></i></div>
-                <div class="button-prev"><i class="uil uil-previous"></i></div>
+                        <div id="slide3" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Farm House</h2>
+                                <ul><li>An Email verification link and mobile OTP to activate User, Paytm payment gateway.</li></ul>
+                                <div>
+                                    <a class="slide__link" href="https://github.com/js164/farm-house-on-rent"><i
+                                            class="uil uil-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slide4" class="project__card">
+                            <div class="slide__data">
+                                <h2 class="slide__title">Blog App</h2>
+                                <ul><li>Users can create accounts, post blogs, edit and delete blogs, can like other's blogs,
+                                    and also comments on blogs</li></ul>
+                                <div>
+                                    <a class="slide__link" href="https://github.com/js164/blog-connect"><i
+                                            class="uil uil-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="button-next"><i class="uil uil-step-forward"></i></div> -->
+                <!-- <div class="button-prev"><i class="uil uil-previous"></i></div> -->
             </div>
+        </section>
+
+        <section class="project-slider" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+            <img class="certi-img" src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="not found" srcset="">
         </section>
 
         <section class="contact section" id="contact">
@@ -301,7 +407,7 @@
                             <div class="contact__title">
                                 Email
                             </div>
-                                jaysolanki164@gmail.com
+                            jaysolanki164@gmail.com
                         </div>
                     </div>
                     <div class="contact__details">
@@ -312,7 +418,7 @@
                             <div class="contact__title">
                                 Phone
                             </div>
-                                +919099243317
+                            +919099243317
                         </div>
                     </div>
                     <div class="contact__details">
@@ -323,14 +429,15 @@
                             <div class="contact__title">
                                 Address
                             </div>
-                                Surat, Gujarat, India
+                            Surat, Gujarat, India
                         </div>
                     </div>
                 </div>
                 <form action="https://formspree.io/f/mwkaykpp" method="POST" class="contact__form">
                     <input name="name" type="text" placeholder="Name" class="contact__input" required>
                     <input type="mail" name="email" placeholder="Email" class="contact__input" required>
-                    <textarea name="message" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input"
+                        placeholder="Message"></textarea>
                     <input type="submit" class="contact__button button" value="Send">
                 </form>
             </div>
@@ -340,8 +447,9 @@
             <div class="footer__icons">
                 <a href="mailto:jaysolanki164@gmail.com"><i class="uil uil-fast-mail"></i></a>
                 <a href="https://github.com/js164/"><i class="uil uil-github"></i></a>
-                <a href="https://www.linkedin.com/in/jay-solanki-bbb3771a1/"><i class="devicon-linkedin-plain colored"></i></a>
-                <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/jay-solanki-bbb3771a1/"><i
+                        class="devicon-linkedin-plain colored"></i></a>
+                <!-- <a href="https://twitter.com/Jaysolanki164"><i class="uil uil-twitter"></i></a> -->
             </div>
         </footer>
     </main>
@@ -350,16 +458,18 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.button-next').click(function() {
-              $("input[name=slider]:checked").next().click()
+        $(document).ready(function () {
+            $('.button-next').click(function () {
+                $("input[name=slider]:checked").next().click()
             });
-            $('.button-prev').click(function() {
+            $('.button-prev').click(function () {
                 $("input[name=slider]:checked").prev().click()
-              });
-          });
+            });
+        });
     </script>
 </body>
+
 </html>

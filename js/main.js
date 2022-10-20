@@ -39,15 +39,28 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 function eduVisible() {
     document.getElementById('title1').className ='bar-title bar-title-active'
     document.getElementById('title2').className ='bar-title'
+    document.getElementById('title15').className ='bar-title'
     document.querySelector('.qualification__container') .style.display='block';
     document.querySelector('.hobbie__container').style.display = 'none';
+    document.querySelector('.work__container').style.display = 'none';
 }
 
 function hobbieVisible() {
   document.getElementById('title2').className ='bar-title bar-title-active'
   document.getElementById('title1').className ='bar-title'
+  document.getElementById('title15').className ='bar-title'
   document.querySelector('.qualification__container') .style.display='none';
   document.querySelector('.hobbie__container').style.display='grid';
+  document.querySelector('.work__container').style.display = 'none';
+}
+
+function workVisible() {
+  document.getElementById('title15').className ='bar-title bar-title-active'
+  document.getElementById('title1').className ='bar-title'
+  document.getElementById('title2').className ='bar-title'
+  document.querySelector('.work__container').style.display = 'block';
+  document.querySelector('.qualification__container') .style.display='none';
+  document.querySelector('.hobbie__container').style.display='none';
 }
 
 
@@ -68,6 +81,7 @@ sr.reveal('.about__icons a',{ interval: 200});
 sr.reveal('.about__button',{delay:500});
 
 sr.reveal('.bars',{delay:200})
+// sr.reveal('.work__list',{interval:100})
 sr.reveal('.qualification__list',{interval:100})
 
 sr.reveal('.skills__subtitle',{}); 
