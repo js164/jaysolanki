@@ -173,7 +173,7 @@ h1,h2,p{
       grid-template-columns: repeat(2, 1fr);
     } */
     .home__img{
-      height: 55vh;
+      /* height: 55vh; */
       margin: auto;
       /* background-color: indigo; */
     }
@@ -268,18 +268,23 @@ a{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 300px;
-  margin-top: 10rem;
+  width: 50vw;
+  /* margin-top: 4rem; */
   max-height: 70vh;
   overflow: hidden;
+  /* clip-path: circle(); */
+  /* background-color: #4070F4; */
+  /* align-self:flex-start; */
   /* margin-right: 20%; */
   /* margin-right: var(--mb-2); */
 }
 .home__img img{
-  /* max-width: 700px;
+  max-width: 70vw;
   max-height: 70vh;
-  border-radius: 0%; */
   height: auto;
+  position: relative;
+  right: 8vw;
+  bottom: 0%;
   /* transform: rotateY(180deg); */
 }
 
@@ -569,34 +574,34 @@ a{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 75%;
+  width: 100%;
 }
 .skills__js{
-  width: 65%;
+  width: 100%;
 }
 .skills__py{
-  width: 70%;
+  width: 100%;
 }
 .skills__django{
-  width: 55%;
+  width: 100%;
 }
 .skills__c{
-  width: 75%;
+  width: 100%;
 }
 .skills__mern{
-  width: 70%;
+  width: 100%;
 }
 .skills__aws{
-  width: 75%;
+  width: 100%;
 }
 .skills__java{
-  width: 40%;
+  width: 100%;
 }
 .skills__mysql{
-  width: 60%;
+  width: 100%;
 }
 .skills__angular{
-  width: 65%;
+  width: 100%;
 }
 
 
@@ -844,8 +849,8 @@ a{
       align-self: flex-end;
     }
     .home__img{
-      width: 457px;
-      bottom: 30%;
+      /* width: 457px; */
+      /* top: 35vh */
     }
     .home_scroll{
       padding-top: 0;
@@ -882,8 +887,8 @@ a{
       margin-right: auto;
     }
     .home__img{
-      right: 10%;
-      bottom: 0;
+      /* right: 10%; */
+      /* bottom: 0; */
     }
 }
   
