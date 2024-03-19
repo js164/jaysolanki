@@ -384,6 +384,7 @@ a{
 .w_data{
   width: 40vw;
   height: 15vh;
+  overflow-x: scroll;
 }
 .w_extra{
   width: 20vw;
@@ -476,6 +477,7 @@ a{
 .q_data,.q_extra{
   width: 40vw;
   height: 15vh;
+  overflow-x: scroll;
 }
 .q_track{
   width: 20vw;
