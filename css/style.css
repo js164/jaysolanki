@@ -378,7 +378,8 @@ a{
   justify-content:space-around;
   align-items:center;
   align-content: center;
-  
+  padding: 10px;
+  text-align: justify;
 }
 .w_data{
   width: 40vw;
@@ -467,11 +468,11 @@ a{
   justify-content:space-around;
   align-items:center;
   align-content: center;
-  
-}
-.qualification__list:nth-child(even){
   flex-direction: row-reverse;
 }
+/* .qualification__list:nth-child(even){
+  flex-direction: row-reverse;
+} */
 .q_data,.q_extra{
   width: 40vw;
   height: 15vh;
@@ -483,7 +484,7 @@ a{
 .q_data{
   margin: auto;
   position:relative;
-  left: 15vw;
+  /* left: 15vw; */
 }
 .q_right_data{
   left: 0vw;
